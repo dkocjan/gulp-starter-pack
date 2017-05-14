@@ -1,0 +1,5 @@
+// Font size with rems
+@mixin font-size($size){
+  font-size: $size; //fallback for old browsers
+  font-size: calculateRem($size);
+}

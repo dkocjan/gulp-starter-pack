@@ -1,0 +1,23 @@
+// Responsive breakpoints
+@mixin bp($point) {
+  @if $point == lg {
+    @media (min-width: 64.375em) {
+      @content;
+    }
+  }
+  @else if $point == md {
+    @media (min-width: 50em) {
+      @content;
+    }
+  }
+  @else if $point == sm {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @else if $point == xs {
+    @media (min-width: 30em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+// Line height with rems
+@mixin line-height($height){
+  line-height: $height; //fallback for old browsers
+  line-height: calculateRem($height);
+}
